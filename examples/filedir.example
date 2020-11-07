@@ -1,0 +1,9 @@
+# set ft=nginx
+# static site
+server {
+        include snippets/listenssl.conf;
+        server_name example.com;
+        root /srv/www/filedir;
+        include snippets/serve.conf;
+        autoindex on;
+}
